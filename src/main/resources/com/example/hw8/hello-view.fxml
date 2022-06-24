@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #878787;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hw8.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="100.0" maxWidth="400.0" minHeight="100.0" minWidth="400.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #4A4A4A;" text="Конвертер" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <ChoiceBox id="checkbox" fx:id="checkbox" layoutX="14.0" layoutY="182.0" prefHeight="38.0" prefWidth="208.0" />
+      <TextField id="label" fx:id="label" layoutX="14.0" layoutY="115.0" onKeyReleased="#convert" prefHeight="52.0" prefWidth="371.0" promptText="Введите число" style="-fx-background-color: #878787; -fx-border-color: #333; -fx-border-radius: 10; -fx-text-fill: #ffffff;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="269.0" prefHeight="30.0" prefWidth="183.0" text="Значение в тоннах: " textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="kg_res" fx:id="kg_res" layoutX="14.0" layoutY="377.0" prefHeight="30.0" prefWidth="371.0" text="0" textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="347.0" prefHeight="30.0" prefWidth="237.0" text="Значение в килограммах: " textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="g_res" fx:id="g_res" layoutX="14.0" layoutY="450.0" prefHeight="30.0" prefWidth="371.0" text="0" textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="420.0" prefHeight="30.0" prefWidth="202.0" text="Значение в граммах: " textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label id="t_res" fx:id="t_res" layoutX="14.0" layoutY="300.0" prefHeight="30.0" prefWidth="371.0" text="0" textFill="#424142">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="warning_label" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="505.0" prefHeight="52.0" prefWidth="371.0" textAlignment="CENTER" textFill="#d10000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
